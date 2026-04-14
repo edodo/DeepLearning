@@ -11,7 +11,7 @@ This project features an advanced object detection and intelligent reporting sys
     * **Fallback (Groq):** Automatically switches to the **Groq API** (Llama 3/Mixtral) to ensure continuous report generation when Gemini tokens are exhausted.
 * **Interactive Analysis:** Provides visual bounding boxes and a detailed data table with confidence scores.
 
-## 🛠 Tech Stack
+## Tech Stack
 * **Deep Learning:** PyTorch, Torchvision, Hugging Face Transformers
 * **Frontend:** Streamlit
 * **LLM APIs:** Google Generative AI (Gemini), Groq, Hugging Face
