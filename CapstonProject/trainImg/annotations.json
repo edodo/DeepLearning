@@ -1,0 +1,62 @@
+[
+  {
+    "file_name": "01 edodo.jpg",
+    "boxes": [[110, 380, 520, 620]],
+    "labels": [91],
+    "label_name": "edodo"
+  },
+  {
+    "file_name": "02 edodo.jpg",
+    "boxes": [[105, 395, 450, 605]],
+    "labels": [91],
+    "label_name": "edodo"
+  },
+  {
+    "file_name": "03 edodo.jpg",
+    "boxes": [[90, 330, 550, 670]],
+    "labels": [91],
+    "label_name": "edodo"
+  },
+  {
+    "file_name": "04 edodo.jpg",
+    "boxes": [[125, 350, 480, 620]],
+    "labels": [91],
+    "label_name": "edodo"
+  },
+  {
+    "file_name": "05 edodo.jpg",
+    "boxes": [[45, 360, 460, 640]],
+    "labels": [91],
+    "label_name": "edodo"
+  },
+  {
+    "file_name": "06 edodo.jpg",
+    "boxes": [[235, 385, 680, 615]],
+    "labels": [91],
+    "label_name": "edodo"
+  },
+  {
+    "file_name": "07 edodo.jpg",
+    "boxes": [[100, 210, 310, 325]],
+    "labels": [91],
+    "label_name": "edodo"
+  },
+  {
+    "file_name": "08 edodo.jpg",
+    "boxes": [[145, 370, 475, 630]],
+    "labels": [91],
+    "label_name": "edodo"
+  },
+  {
+    "file_name": "09 edodo.jpg",
+    "boxes": [[245, 780, 565, 955]],
+    "labels": [91],
+    "label_name": "edodo"
+  },
+  {
+    "file_name": "10 edodo.jpg",
+    "boxes": [[85, 375, 525, 625]],
+    "labels": [91],
+    "label_name": "edodo"
+  }
+]
