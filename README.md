@@ -63,9 +63,13 @@ There are no extra compiled components in DETR and package dependencies are mini
 
 4.  **Run the App**
     ```bash
-    streamlit run ui-resnet-custom.py
+    streamlit run ui-resnet.py    
     ```
 
+5.  **Run the Custom model App**
+    ```bash
+    streamlit run ui-resnet-custom.py    
+    ```
 ## Results & Discussion
 * **Standard Detection:** The model performs exceptionally well on standard categories like people, vehicles, and furniture.
 * **Custom Object Detection:** While the system successfully integrates 'edodo', detection accuracy is currently in an iterative improvement phase due to the time-intensive nature of high-quality sample generation.
