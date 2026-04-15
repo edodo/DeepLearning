@@ -1,0 +1,7 @@
+https://huggingface.co/facebook/detr-resnet-50
+https://medium.com/@souvik_real/transforming-object-detection-and-counting-with-huggingface-facebooks-detr-resnet-50-b7b80aa4407c
+https://gemini.google.com/app/d18b4f1ff381a435
+https://arxiv.org/pdf/2005.12872
+
+이미지안에 어떤 종류의 물건이 있는지 검출하고 특정 물건있는지 조사하는 것을 만들고 싶었다.
+찾는 물건 관련 정보를 api를 통해 조회하는 것이 목적이다.

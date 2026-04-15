@@ -31,10 +31,18 @@ This project features an advanced object detection and intelligent reporting sys
     cd DeepLearning
     ```
 
-2.  **Install Dependencies**
-    ```bash
-    pip install -r requirements.txt
-    ```
+2.  **Usage - Object detection**
+There are no extra compiled components in DETR and package dependencies are minimal, so the code is very simple to use. We provide instructions how to install dependencies via conda. First, clone the repository locally:
+
+git clone https://github.com/facebookresearch/detr.git
+Then, install PyTorch 1.5+ and torchvision 0.6+:
+
+conda install -c pytorch pytorch torchvision
+Install pycocotools (for evaluation on COCO) and scipy (for training):
+
+conda install cython scipy
+pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
+That's it, should be good to train and evaluate detection models.
 
 3.  **Setup Secrets**
     Create a `.streamlit/secrets.toml` file and add your API keys:
