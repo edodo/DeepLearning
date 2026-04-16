@@ -88,7 +88,7 @@ st.set_page_config(page_title="AI Object Explorer (ResNet-50)", layout="wide")
 st.title("AI Multi-Object Detection (DETR ResNet-50)")
 
 with st.sidebar:
-    st.header("⚙️ Settings")
+    st.header("Settings")
     uploaded_file = st.file_uploader("Upload an image file", type=["jpg", "jpeg", "png"])
     target_items_raw = st.text_input("Items to find (Target)", "laptop")
     
@@ -185,17 +185,18 @@ if process_btn:
                         success = True
                     except:
                         st.warning("Gemini failed...")
-
-                if not success and "HF_API_KEY" in st.secrets and "GROQ_API_KEY" in st.secrets:
+                
+                if not success and "HF_API_KEY" in st.secrets:
                     try:
                         hf_caption = get_huggingface_caption(st.secrets["HF_API_KEY"], img_bytes)
                         if hf_caption:
                             refined_prompt = f"Description: '{hf_caption}'. Detected: {obj_summary}. Focus: {target_items_raw}."
+                            
                             groq_resp = get_groq_response(st.secrets["GROQ_API_KEY"], refined_prompt)
-                            st.info(f"**[HF + Groq]**\n\n{groq_resp}")
+                            st.info(f"**[HuggingFace + Groq]**\n\n{groq_resp}")
                             success = True
                     except:
-                        st.warning("HF combination failed...")
+                        st.warning("Hugging Face + Groq combination failed...")
 
                 if not success and "GROQ_API_KEY" in st.secrets:
                     try:
@@ -204,6 +205,7 @@ if process_btn:
                         st.info(f"**[Groq Solo]**\n\n{groq_resp}")
                         success = True
                     except:
+                        st.warning("Groqfailed...")
                         pass
 
                 if not success:
