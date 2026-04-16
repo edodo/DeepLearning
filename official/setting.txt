@@ -1,0 +1,16 @@
+# 레포지토리 클론
+git clone https://github.com/facebookresearch/detr.git
+cd detr
+
+# 필수 패키지 설치
+pip install -U git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI
+pip install -r requirements.txt
+
+다운로드
+http://images.cocodataset.org/annotations/panoptic_annotations_trainval2017.zip
+/path/to/coco/
+  annotations/  # annotation json 파일들
+  train2017/    # 훈련 이미지
+  val2017/      # 검증 이미지
+
+python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py --coco_path /path/to/coco --batch_size 2  --epochs 300 --output_dir output_resnet50

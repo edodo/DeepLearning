@@ -1,0 +1,10 @@
+numpy
+cython
+pycocotools>=2.0.7
+submitit
+torch>=1.5.0
+torchvision>=0.6.0
+panopticapi @ git+https://github.com/cocodataset/panopticapi.git
+scipy
+onnx
+onnxruntime
